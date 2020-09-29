@@ -11,7 +11,11 @@ def test_calcline(a, b, answer):
     assert line(a, b) == answer
 
 
-@pytest.mark.parametrize('a, b, c, answer', [(1, -3, -4, [4, -1])])
+@pytest.mark.parametrize('a, b, c, answer', [
+    (1, -3, -4, [4, -1]),
+    (2, 4, 2, [4, -1])
+
+])
 def test_calcSquare(a, b, c, answer):
     assert square(a, b, c) == answer
 
